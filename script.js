@@ -1,4 +1,3 @@
-// Smooth scrolling for all internal links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -9,20 +8,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Theme toggle
-const themeToggle = document.getElementById('theme-toggle');
+const checkbox = document.getElementById('theme-toggle-checkbox');
 
-// Load saved theme
-if(localStorage.getItem('theme') === 'light'){
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.remove('light-mode');
+    checkbox.checked = true;
+} else {
     document.body.classList.add('light-mode');
-    themeToggle.textContent = '🌞';
+    checkbox.checked = false; 
 }
 
-// Toggle theme on click
-themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-    const mode = document.body.classList.contains('light-mode') ? 'light' : 'dark';
-    localStorage.setItem('theme', mode);
-
-    themeToggle.textContent = mode === 'light' ? '🌞' : '🌙';
+checkbox.addEventListener('change', () => {
+    if (checkbox.checked) {
+        document.body.classList.remove('light-mode');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        document.body.classList.add('light-mode');
+        localStorage.setItem('theme', 'light');
+    }
 });
