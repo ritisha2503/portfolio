@@ -94,13 +94,13 @@ body.light-mode {
 }
 
 .icon-sun {
-    left: 1px;
+    left: 3px;
     opacity: 1;
     color: #FFD966;
 }
 
 .icon-moon {
-    right: 1px;
+    right: 3px;
     opacity: 0.4;
     color: #E6E6FA;
 }
