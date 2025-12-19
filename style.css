@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #0f0b17;
     color: #eae6f5;
     line-height: 1.6;
@@ -66,4 +66,125 @@ main {
     padding: 80px 20px;
 }
 
-section{}
+section{
+    margin-bottom: 80px;
+}
+
+
+section h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #D6B9FC;
+}
+
+.about-me-text {
+    max-width: 700px;
+    color: #cfc9e8;
+    font-size: 1.05rem;
+}
+
+.skills-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skills-list li{
+    padding: 8px 16px;
+    background-color: #1c1633;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    border: 1px solid #2c2552;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card{
+    background-color: #16112a;
+    border-radius: 16px;
+    padding: 25px;
+    max-width: 600px;
+    border: 1px solid #2c2552;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(131, 140, 229, 0.2);
+}
+
+.project-card img{
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.project-card-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-card-description{
+    font-size: 0.95rem;
+    color: #cfc9e8;
+    margin-bottom: 15px;
+}
+
+.project-card a{
+    display: inline-block;
+    margin-right: 15px;
+    color: #838CE5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project-card a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #0b0814;
+    text-align: center;
+    padding: 50px 20px;
+    border-top: 1px solid #2c2552;
+}
+
+.contact-title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #D6B9FC;
+}
+
+.contact-info p{
+    margin: 8px 0;
+    color: #cfc9e8;
+}
+
+.contact-info a{
+    color: #838CE5;
+    text-decoration: none;
+}
+
+.contact-info a:hover{
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px){
+    header h1{
+        font-size: 2.2rem;
+    }
+
+    header h2{
+        font-size: 1.6rem;
+    }
+
+}
