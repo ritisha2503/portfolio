@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f0b17;
+    color: #eae6f5;
+    line-height: 1.6;
+}
+
+header{
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1a1230, #0f0b17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.profile-photo{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #838CE5;
+    margin-bottom: 20px;
+}
+
+header h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+header h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #b8b2d6;
+    margin: 10px 0 25px;
+}
+
+.contact-button{
+    background: linear-gradient(135deg, #838CE5, #D6B9FC);
+    color: #0f0b17;
+    border: none;
+    padding: 12px 26px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(131, 140, 229, 0.35);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+section{}
