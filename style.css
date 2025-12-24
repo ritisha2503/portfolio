@@ -249,6 +249,12 @@ body.light-mode .skills-list li {
     flex-direction: column;
 }
 
+.project-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .project-card{
     background-color: var(--section-bg);
     border-radius: 16px;
